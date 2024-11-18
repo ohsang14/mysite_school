@@ -1,0 +1,252 @@
+/* 공통 스타일 */
+body {
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  
+  header, footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  header {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  header .logo img, footer img {
+    height: 40px;
+  }
+  
+  footer {
+    color: #666;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  
+  /* 네비게이션 스타일 */
+  header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  header nav a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    color: #36b876;
+  }
+  
+  .pm-navigation_horizon_pc_nav_03 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pm-navigation_horizon_pc_nav_03 .dep1 > li {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .pm-navigation_horizon_pc_nav_03 .dep1 > li > a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+  
+  .pm-navigation_horizon_pc_nav_03 .dep1 > li:hover > a {
+    color: #36b876;
+  }
+  
+  .pm-navigation_horizon_pc_nav_03 .dep1 > li > div {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pm-navigation_horizon_pc_nav_03 .dep1 > li:hover > div {
+    display: block;
+  }
+  
+  .pm-navigation_horizon_pc_nav_03 .dep2 > li > a {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    padding: 8px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .pm-navigation_horizon_pc_nav_03 .dep2 > li:hover > a {
+    background: #f1f1f1;
+    color: #36b876;
+  }
+  
+  /* 슬라이더 */
+  .carousel-inner img {
+    height: 450px;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    top: 100px;
+    left: 100px;
+    transform: none;
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .carousel-caption p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  /* 메인 섹션 */
+  .main-section {
+    margin-top: 30px;
+  }
+  
+  .main-section .row {
+    margin-bottom: 20px;
+  }
+  
+  .info-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  
+  .info-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #36b876;
+    padding: 10px 15px;
+    margin: 0;
+  }
+  
+  .info-card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .info-card ul {
+    list-style: none;
+    padding: 10px 15px;
+    margin: 0;
+  }
+  
+  .info-card ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info-card .btn-custom {
+    background-color: #36b876;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: 15px;
+  }
+  
+  .info-card .btn-custom:hover {
+    background-color: #2a904d;
+  }
+  
+  /* 서브 타이틀 및 메뉴 */
+  .sub_title_01 {
+    background: url("/img/juyo.png") no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+    font-family: "Kaushan Script", cursive;
+  }
+  
+  .sub_title_01 h1 {
+    font-size: 48px;
+  }
+  
+  .sub_title_01 .title p {
+    font-size: 20px;
+  }
+  
+  .sub_menu_01 {
+    margin-top: 20px;
+  }
+  
+  .sub_menu_01 .snb ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sub_menu_01 .snb ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+  }
+  
+  .sub_menu_01 .snb ul li.active a {
+    color: #36b876;
+    font-weight: bold;
+  }
+  
+  /* 서브 페이지 스타일 */
+  .body_content {
+    padding: 20px;
+  }
+  
+  .sub_page ul li {
+    font-size: 15px;
+    line-height: 1.6em;
+    margin-bottom: 5px;
+    font-family: "Noto Sans", "Nanum Gothic", "Malgun Gothic", sans-serif;
+    font-weight: 400;
+  }
+  
+  /* 반응형 스타일 */
+  @media screen and (min-width: 768px) {
+    .sub_title_01 h1 {
+      font-size: 36px;
+    }
+  
+    .sub_title_01 .title p {
+      font-size: 16px;
+    }
+  
+    .sub_menu_01 .snb ul li {
+      padding: 8px 12px;
+    }
+  
+    .sub_page ul li {
+      font-size: 16px;
+    }
+  }

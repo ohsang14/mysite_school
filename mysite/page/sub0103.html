@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한마음사회적협동조합</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .sub_title_01 {
+            background: url('/img/juyo.png') no-repeat center center;
+            background-size: cover;
+            padding: 60px 0;
+            text-align: center;
+            color: #fff;
+            font-family: 'Kaushan Script', cursive;
+        }
+        .sub_title_01 h1 {
+            font-size: 48px;
+        }
+        .sub_title_01 .title p {
+            font-size: 20px;
+        }
+        .sub_menu_01 {
+            margin-top: 20px;
+        }
+        .sub_menu_01 .snb ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sub_menu_01 .snb ul li {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 15px;
+        }
+        .sub_menu_01 .snb ul li.active a {
+            color: #36b876;
+            font-weight: bold;
+        }
+        .body_content {
+            padding: 20px;
+        }
+        .sub01_wrap figure {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .sub01_wrap li {
+            font-size: 15px;
+            padding-left: 17px;
+            margin-bottom: 20px;
+            color: #454545;
+            line-height: 1.6em;
+            position: relative;
+        }
+        .sub01_wrap li:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 6px;
+            height: 6px;
+            background: #e9e72c;
+            border: 3px solid #36b876;
+            border-radius: 50%;
+        }
+        .sub0102_wrap {
+            overflow: hidden;
+        }
+        .sub0102_wrap figure {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .sub0102_wrap p {
+            font-size: 15px;
+            margin-bottom: 10px;
+            line-height: 1.5em;
+            color: #454545;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+        }
+        .sub0102_wrap p>span {
+            color: #36b876;
+            font-weight: 500;
+        }
+        .sub0102_wrap h2 {
+            font-size: 16px;
+            text-align: right;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+        }
+        .sub0103_wrap {
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .sub_page article.type2 .ar_section1 {
+            position: relative;
+        }
+        .sub_page article.type2 .ar_section1>div {
+            margin: 35px 0;
+            border-bottom: 1px solid #ccc;
+            padding: 0 0 20px;
+        }
+        .sub_page article.type2 .ar_section1>div h1 {
+            font-size: 16px;
+            display: inline-block;
+            border-radius: 8px;
+            margin: 0 0 15px;
+            padding: 7px 20px;
+            font-family: 'Noto Sans', 'Nanum Gothic', 'Malgun Gothic', sans-serif;
+            font-weight: 600;
+        }
+        .sub_page .b_type1 {
+            background: #36b876;
+            color: #fff;
+        }
+        .sub_page .b_type2 {
+            background: #a0651e;
+            color: #fff;
+        }
+        .sub_page ul li {
+            font-size: 15px;
+            line-height: 1.6em;
+            margin-bottom: 5px;
+            font-family: 'Noto Sans', 'Nanum Gothic', 'Malgun Gothic', sans-serif;
+            font-weight: 400;
+        }
+        @media screen and (min-width: 768px) {
+            .sub_title_01 h1 {
+                font-size: 36px;
+            }
+            .sub_title_01 .title p {
+                font-size: 16px;
+            }
+            .sub_menu_01 .snb ul li {
+                padding: 8px 12px;
+            }
+            .sub01_wrap li {
+                font-size: 14px;
+            }
+            .sub0102_wrap p {
+                font-size: 16px;
+            }
+            .sub0102_wrap h2 {
+                font-size: 18px;
+            }
+            .sub_page article.type2 .ar_section1 p {
+                position: absolute;
+            }
+            .sub_page article.type2 .ar_section1 p.vline {
+                width: 1px;
+                height: 100%;
+                background: #ccc;
+                left: 154px;
+            }
+            .sub_page article.type2 .ar_section1>div {
+                position: relative;
+                border-bottom: 0;
+                padding: 0;
+                min-height: 90px;
+                margin: 25px 0;
+            }
+            .sub_page article.type2 .ar_section1 p.hline {
+                width: 40px;
+                height: 1px;
+                background: #ccc;
+                left: 135px;
+                top: 44px;
+            }
+            .sub_page article.type2 .ar_section1 p.dot {
+                width: 7px;
+                height: 7px;
+                background: #e9e72c;
+                border-radius: 50%;
+                left: 151px;
+                top: 41px;
+            }
+            .sub_page article.type2 .ar_section1>div h1 {
+                font-size: 18px;
+                display: block;
+                float: left;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                line-height: 90px;
+            }
+            .sub_page article.type2 .ar_section1>div ul {
+                margin-left: 210px;
+                padding-top: 31px;
+            }
+            .sub_page ul li {
+                font-size: 16px;
+            }
+        }
+        footer {
+            background: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+        }
+        footer img {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Header -->
+     <header class="container d-flex justify-content-between align-items-center">
+        <div class="logo"> <a href="/mysite.html"><img src="/img/logo.png" alt="로고"></a> </div>
+        <nav>
+            <div id="pm_pc_nav_03" class="pm-navigation_horizon_pc_nav_03">
+                <ul class="dep1">
+                    <li>
+                        <a href="#">기관소개</a>
+                        <div>
+                            <ul class="dep2">
+                                <li><a href="/page/sub01.html">설립목적</a></li>
+                                <li><a href="/page/sub0102.html">인사말</a></li>
+                                <li><a href="/page/sub0103.html">연혁</a></li>
+                                <li><a href="/page/sub0104.html">정관</a></li>
+                                <li><a href="/page/sub0105.html">조직도</a></li>
+                                <li><a href="/page/map_01.html">찾아오는 길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">주요사업</a>
+                        <div>
+                            <ul class="dep2">
+                                <li><a href="/page/sub02.html">공동생활가정 운영사업</a></li>
+                                <li><a href="/page/sub0202.html">자립생활주택 운영사업</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <div>
+                            <ul class="dep2">
+                                <li><a href="/bbs/notice.html">공지사항</a></li>
+                                <li><a href="/bbs/qna.html">질문게시판</a></li>
+                                <li><a href="#">갤러리</a></li>
+                                <li><a href="/bbs/sub0304.html">자료실</a></li>
+                                <li><a href="/bbs/sub0305.html">보도자료</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">조합원</a>
+                        <div>
+                            <ul class="dep2">
+                                <li><a href="/page/sub04.html">조합원 안내</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">후원하기</a>
+                        <div>
+                            <ul class="dep2">
+                                <li><a href="/page/sub05.html">후원 안내</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- 헤더 영역 -->
+    <div class="sub_title_01">
+        <div class="container">
+            <h1>기관소개</h1>
+            <div class="title">
+                <p><span>한마음사회적협동조합</span> 홈페이지 방문을 환영합니다.</p>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><span class="icon-home">🏠</span></li>
+                    <li class="breadcrumb-item">기관소개</li>
+                    <li class="breadcrumb-item active">연혁</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 서브 내비게이션 -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sub_menu_01">
+                    <div class="snb">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="/page/sub01.html">설립목적</a></li>
+                            <li class="list-group-item"><a href="/page/sub0102.html">인사말</a></li>
+                            <li class="list-group-item"><a href="/page/sub0103.html">연혁</a></li>
+                            <li class="list-group-item"><a href="/page/sub0104.html">정관</a></li>
+                            <li class="list-group-item"><a href="/page/sub0105.html">조직도</a></li>
+                            <li class="list-group-item active"><a href="/page/map_01.html">찾아오는길</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="body_content sub">
+                    <!-- 본문 내용 -->
+                    <h1 class="sub_subject">연혁<span></span></h1>
+                    <div class="sub0103_wrap">
+                        <div class="sub_page">
+                            <article class="type2">
+                                <section class="ar_section1">
+                                    <p class="vline"></p>
+                                    <div>
+                                        <p class="hline"></p>
+                                        <p class="dot"></p>
+                                        <h1 class="b_type1">2019</h1>
+                                        <ul>
+                                            <li>서대문구 정신재활시설 공동생활가정 3개소 운영</li>
+                                            <li>노랑통닭과 함께하는 '착카데이' 나눔행사</li>
+                                            <li>공동모금회지원사업 미술치료프로그램 - '집은 엄마다' 선정</li>
+                                            <li>서울특별시 정신질환자 자립생활주택 운영사업 선정</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="hline"></p>
+                                        <p class="dot"></p>
+                                        <h1 class="b_type2">2018</h1>
+                                        <ul>
+                                            <li>정신장애인 심리치료지원사업</li>
+                                            <li>서대문구 지역사회 취약계층 나들이 지원사업</li>
+                                            <li>정신장애인권 개선사업</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p class="hline"></p>
+                                        <p class="dot"></p>
+                                        <h1 class="b_type1">2017</h1>
+                                        <ul>
+                                            <li>2월 8일 보건복지부 설립인가</li>
+                                            <li>장애인인권 및 인권감수성 향상 사업</li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="/img/logo.png" alt="로고">
+        <p>상호: 한마음사회적협동조합 | 대표자: 최동표</p>
+        <p>주소: 서울 서대문구 홍연8길 3 (연희동) 2층</p>
+        <p>사업자 등록번호: 564-82-00140 | Tel: 010-8320-2506 | Fax: 02-394-2506</p>
+        <p>© 2024 한마음사회적협동조합. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
